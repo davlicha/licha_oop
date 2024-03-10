@@ -1,0 +1,3 @@
+C:/Users/davyd/OneDrive/Документы/Git Projects/demo_oop_143/cmake-build-debug/CMakeFiles/demo_oop_143.dir
+C:/Users/davyd/OneDrive/Документы/Git Projects/demo_oop_143/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/davyd/OneDrive/Документы/Git Projects/demo_oop_143/cmake-build-debug/CMakeFiles/rebuild_cache.dir
