@@ -1,6 +1,7 @@
 #ifndef DEMO_OOP_143_INGREDIENT_H
 #define DEMO_OOP_143_INGREDIENT_H
 #include <iostream>
+using namespace std;
 
 class Ingredient {
 private:
@@ -8,12 +9,12 @@ private:
     double amount;
 
 public:
-    std::string getName() {
-        return name;
+    void getName() {
+        cout << "Name of ingredient: " << name << endl;
     }
 
-    int getAmount() {
-        return amount;
+    void getAmount() {
+        cout << "Amount of ingredient: " << amount << endl;
     }
 
     void setAmount(int value);

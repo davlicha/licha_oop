@@ -9,16 +9,16 @@ private:
     int numOfRecieps;
 
 public:
-    std::string getName() {
-        std::cout << "Name of this category: " << name << std::endl;
+    void getName() {
+        std::cout << "Category: " << name << std::endl;
     }
 
     void setName(std::string new_name) {
         name = new_name;
     }
 
-    int getAmount() {
-        std::cout << "Number of recipes in this category: " << numOfRecieps << std::endl;
+    void getAmount() {
+        std::cout << "Number of recipes in the category: " << numOfRecieps << std::endl;
     }
 
     void setAmount(int value);

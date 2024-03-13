@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(demo_oop_143
         main.cpp
-        Reciep.h
-        Reciep.cpp
+        Recipe.h
+        Recipe.cpp
         Ingredient.cpp
         Category.cpp)
