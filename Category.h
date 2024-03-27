@@ -1,33 +1,43 @@
 #ifndef DEMO_OOP_143_CATEGORY_H
 #define DEMO_OOP_143_CATEGORY_H
 #include <iostream>
-
+using namespace std;
 
 class Category {
 private:
-    std::string name;
+    string name;
     int numOfRecieps;
 
 public:
     void getName() {
-        std::cout << "Category: " << name << std::endl;
+        cout << "Category: " << name << endl;
     }
 
-    void setName(std::string new_name) {
+    void setName(string new_name) {
         name = new_name;
     }
 
     void getAmount() {
-        std::cout << "Number of recipes in the category: " << numOfRecieps << std::endl;
+        cout << "Number of recipes in the category: " << numOfRecieps << endl;
     }
 
     void setAmount(int value);
 
     Category();
-    Category(std::string new_name);
-    Category(std::string new_name, int new_numOfRecieps);
+    Category(string new_name);
+    Category(string new_name, int new_numOfRecieps);
     ~Category(){}
 
+    friend ostream &operator<<(ostream &os, const Category &obj) {
+        os << "Name: " << obj.name << endl << "Number of recieps: " << obj.numOfRecieps << endl;
+        return os;
+    }
+
+    friend istream &operator>>(istream &is, Category &obj) {
+        getline(is, obj.name);
+        is >> obj.numOfRecieps;
+        return is;
+    }
 };
 
 
