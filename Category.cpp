@@ -10,10 +10,10 @@ void Category::setAmount(int value) {
 
 
 Category::Category()
-    : Category{"None", 0}{}
+        : Category{"None", 0}{}
 
-Category::Category(std::string new_name)
-    : Category{new_name, 0}{}
+Category::Category(string new_name)
+        : Category{new_name, 0}{}
 
-Category::Category(std::string new_name, int new_numOfRecieps)
-    : name{new_name}, numOfRecieps{new_numOfRecieps}{}
+Category::Category(string new_name, int new_numOfRecieps)
+        : name{new_name}, numOfRecieps{new_numOfRecieps}{}
