@@ -8,4 +8,6 @@ add_executable(demo_oop_143
         Recipe.h
         Recipe.cpp
         Ingredient.cpp
-        Category.cpp)
+        Category.cpp
+        Meal.h
+        Meal.cpp)

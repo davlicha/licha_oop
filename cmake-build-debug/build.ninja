@@ -55,8 +55,8 @@ build CMakeFiles/demo_oop_143.dir/main.cpp.obj: CXX_COMPILER__demo_oop_143_unsca
   OBJECT_DIR = CMakeFiles\demo_oop_143.dir
   OBJECT_FILE_DIR = CMakeFiles\demo_oop_143.dir
 
-build CMakeFiles/demo_oop_143.dir/Reciep.cpp.obj: CXX_COMPILER__demo_oop_143_unscanned_Debug C$:/Users/davyd/OneDrive/Документы/Git$ Projects/demo_oop_143/Reciep.cpp || cmake_object_order_depends_target_demo_oop_143
-  DEP_FILE = CMakeFiles\demo_oop_143.dir\Reciep.cpp.obj.d
+build CMakeFiles/demo_oop_143.dir/Recipe.cpp.obj: CXX_COMPILER__demo_oop_143_unscanned_Debug C$:/Users/davyd/OneDrive/Документы/Git$ Projects/demo_oop_143/Recipe.cpp || cmake_object_order_depends_target_demo_oop_143
+  DEP_FILE = CMakeFiles\demo_oop_143.dir\Recipe.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\demo_oop_143.dir
   OBJECT_FILE_DIR = CMakeFiles\demo_oop_143.dir
@@ -73,6 +73,12 @@ build CMakeFiles/demo_oop_143.dir/Category.cpp.obj: CXX_COMPILER__demo_oop_143_u
   OBJECT_DIR = CMakeFiles\demo_oop_143.dir
   OBJECT_FILE_DIR = CMakeFiles\demo_oop_143.dir
 
+build CMakeFiles/demo_oop_143.dir/Food.cpp.obj: CXX_COMPILER__demo_oop_143_unscanned_Debug C$:/Users/davyd/OneDrive/Документы/Git$ Projects/demo_oop_143/Food.cpp || cmake_object_order_depends_target_demo_oop_143
+  DEP_FILE = CMakeFiles\demo_oop_143.dir\Food.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\demo_oop_143.dir
+  OBJECT_FILE_DIR = CMakeFiles\demo_oop_143.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target demo_oop_143
@@ -81,7 +87,7 @@ build CMakeFiles/demo_oop_143.dir/Category.cpp.obj: CXX_COMPILER__demo_oop_143_u
 #############################################
 # Link the executable demo_oop_143.exe
 
-build demo_oop_143.exe: CXX_EXECUTABLE_LINKER__demo_oop_143_Debug CMakeFiles/demo_oop_143.dir/main.cpp.obj CMakeFiles/demo_oop_143.dir/Reciep.cpp.obj CMakeFiles/demo_oop_143.dir/Ingredient.cpp.obj CMakeFiles/demo_oop_143.dir/Category.cpp.obj
+build demo_oop_143.exe: CXX_EXECUTABLE_LINKER__demo_oop_143_Debug CMakeFiles/demo_oop_143.dir/main.cpp.obj CMakeFiles/demo_oop_143.dir/Recipe.cpp.obj CMakeFiles/demo_oop_143.dir/Ingredient.cpp.obj CMakeFiles/demo_oop_143.dir/Category.cpp.obj CMakeFiles/demo_oop_143.dir/Food.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\demo_oop_143.dir

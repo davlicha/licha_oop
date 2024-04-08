@@ -9,10 +9,9 @@ private:
     string name;
     string description;
     int servings;
-
-public:
     static int count;
 
+public:
     static void PrintCount() {
         cout << "Number of recipes: " << count << endl;
     }

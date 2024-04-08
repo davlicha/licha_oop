@@ -2,6 +2,7 @@
 #include "Recipe.h"
 #include "Ingredient.h"
 #include "Category.h"
+#include "Meal.h"
 using namespace std;
 
 int Recipe::count = 0;
