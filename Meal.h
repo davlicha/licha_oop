@@ -22,5 +22,14 @@ public:
     ~Meal(){}
 };
 
+class Pie : public Meal {
+private:
+    string crustType;
+
+public:
+    Pie();
+    Pie(string new_crustType);
+    ~Pie(){}
+};
 
 #endif //DEMO_OOP_143_MEAL_H
