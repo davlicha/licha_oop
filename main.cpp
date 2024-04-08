@@ -44,5 +44,7 @@ int main() {
     cout << "APPLE PIE:" << endl;
     apple_pie2.displayInfo();
 
+    meal1.addRecipe();
+
     return 0;
 }

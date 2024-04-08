@@ -1,6 +1,9 @@
 #ifndef DEMO_OOP_143_MEAL_H
 #define DEMO_OOP_143_MEAL_H
+#include "Ingredient.h"
+#include "Recipe.h"
 #include <iostream>
+#include <vector>
 using namespace std;
 
 
@@ -9,8 +12,20 @@ private:
     string name;
     int calories;
     bool isVegan;
+//    vector<Ingredient> ingridients;
+    Recipe recipe;
 
 public:
+
+//    void addIngredient(const Ingredient ingredient) {
+//        ingredients.push_back(ingredient);
+//    }
+
+    void addRecipe() {
+    cout << "ADD recipe: " << endl;
+    cin >> recipe;
+    cout << recipe;
+}
 
     void displayInfo() const {
         cout << "Name: " << name << endl;
