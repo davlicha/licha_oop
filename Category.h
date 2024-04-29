@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-class Category {
+class Category final {
 private:
     string name;
     int numOfRecieps;
@@ -40,5 +40,8 @@ public:
     }
 };
 
+//class Subcategory : public Category {
+//
+//};
 
 #endif //DEMO_OOP_143_CATEGORY_H

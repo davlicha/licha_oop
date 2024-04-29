@@ -7,44 +7,63 @@ using namespace std;
 
 int Recipe::count = 0;
 
+void showTotalCalories(Meal &meal, int baseCalories) {
+    cout << "Calories overall: " << meal.calculateNutritionalValue(baseCalories) << endl;
+}
+
+void printOne(Meal &obj){
+    cout << obj;
+}
+void printTwo(Printable &obj){
+    cout << obj;
+}
+
+
 int main() {
 
-////  move
-//    Ingredient Ingredient1("Smth", 4);
-//    cout << Ingredient1;
-//    Ingredient Ingredient2(move(Ingredient1));
-//    cout << Ingredient2;
-//    cout << Ingredient1;
-//
-////  copy
-//    Recipe Kraken;
-//    cout << "Enter recipe kraken: " << endl;
-//    cin >> Kraken;
-//    Recipe ItalyKraken(Kraken);
-//    cout << Kraken;
-//    cout << "Italy version: " << endl << ItalyKraken << endl;
-//
-////  static
-//    Recipe::PrintCount();
-//    cout << endl;
-//
-////  overload operator
-//    if (Ingredient1 == Ingredient2)
-//        cout << "They are similar!";
-//    else
-//        cout << "They are different!";
+    //Problem demonstration
+    Meal meal1;
+    Pie pie1;
+    meal1.problem();
+    pie1.problem();
+    Meal *mp1 = new Pie();
+    mp1->problem();
+    delete mp1;
 
-    Meal meal1("pie", 300, true);
-    Pie apple_pie1;
-    Pie apple_pie2("Crispy");
-
-    cout << "MEAL:" << endl;
-    meal1.displayInfo();
+    //virtual functions
+    Meal *m = new Meal();
+    Meal *p = new Pie();
+    Meal *s = new Soup();
     cout << endl;
-    cout << "APPLE PIE:" << endl;
-    apple_pie2.displayInfo();
+    cout << m->getCookingInstructions();
+    cout << endl;
+    cout << p->getCookingInstructions();
+    cout << endl;
+    cout << s->getCookingInstructions();
+    cout << endl;
 
-    meal1.addRecipe();
+    cout << "Calories overall: " << m->calculateNutritionalValue(0);
+    cout << endl;
+    cout << "Calories overall with crust: " << p->calculateNutritionalValue(470);
+    cout << endl;
+    cout << "Calories overall with broth: " << s->calculateNutritionalValue(300);
+    cout << endl;
+
+    //Another way
+    cout << endl;
+    showTotalCalories(*m, 300);
+    showTotalCalories(*p, 470);
+    showTotalCalories(*s, 300);
+
+    //abstract class
+    cout << endl;
+    cout << *m << endl;
+    cout << *p << endl;
+    cout << *s << endl;
+
+    delete m;
+    delete p;
+    delete s;
 
     return 0;
 }

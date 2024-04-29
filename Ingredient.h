@@ -7,8 +7,13 @@ class Ingredient {
 private:
     string name;
     double amount;
+    int queue;
 
 public:
+    virtual void ingredientNum() const final{
+        cout << "Current page is: " << queue << endl;
+    }
+
     void getName() {
         cout << "Name of ingredient: " << name << endl;
     }
@@ -22,7 +27,7 @@ public:
     Ingredient();
     Ingredient(string new_name);
     Ingredient(string new_name, double new_amount);
-    ~Ingredient(){}
+    virtual ~Ingredient(){}
 
     Ingredient(Ingredient &&other) noexcept :
             name{other.name}, amount{other.amount} {
@@ -50,9 +55,13 @@ public:
         return is;
     }
 
-
-
-
 };
+
+//class Treasure : public Ingredient {
+//public:
+//    void ingredientNum() const override{
+//
+//    }
+//};
 
 #endif //DEMO_OOP_143_INGREDIENT_H
